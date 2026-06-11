@@ -3,9 +3,9 @@
     {
       "name": "Codex CLI (OpenAI)",
       "version": "2026-06-11 (gpt-5.4)",
-      "contribution": "README fixes (#2), Button type annotations (#3), Prisma schema docs (#5), body size limit (#9)"
+      "contribution": "README fixes (#2), Button type annotations (#3), Prisma schema docs (#5), body size limit (#9), Button tests (#13)"
     }
   ],
   "last_updated": "2026-06-11",
-  "total_contributions": 4
+  "total_contributions": 5
 }
