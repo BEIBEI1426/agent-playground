@@ -1,3 +1,6 @@
+// Prisma schema for TaskFlow domain models
+// Each model represents a core entity in the task management platform.
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -7,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+/// Registered user of the platform. Can own jobs and submit proposals.
 model User {
   id        String     @id @default(cuid())
   email     String     @unique
@@ -17,6 +21,7 @@ model User {
   updatedAt DateTime   @updatedAt
 }
 
+/// A task or project posted by a user. Tracks status through the workflow lifecycle.
 model Job {
   id          String     @id @default(cuid())
   title       String
@@ -29,6 +34,7 @@ model Job {
   updatedAt   DateTime   @updatedAt
 }
 
+/// A bid or application submitted by a user in response to a job posting.
 model Proposal {
   id        String   @id @default(cuid())
   summary   String
