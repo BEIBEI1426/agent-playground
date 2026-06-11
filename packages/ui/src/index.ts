@@ -1,5 +1,7 @@
 export type ButtonProps = {
+  /** Text displayed on the button */
   label: string;
+  /** When true, the button is non-interactive */
   disabled?: boolean;
 };
 
